@@ -1,0 +1,166 @@
+.contenido {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  display: grid;
+  overflow-x: hidden;
+  padding: 100px;
+}
+
+.titulo {
+  text-align: left;
+  margin-left: 50px;
+  font-weight: 500;
+  color: azure;
+  font-size: 3rem;
+  padding: 4px;
+}
+
+#acerca {
+  margin-top: 100px;
+}
+
+.contenido > div {
+  padding: 0px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.parrafos {
+  padding: 30px;
+}
+
+.card > img {
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.divisor {
+  border: 1px solid rgba(240, 255, 255, 0.308);
+}
+
+hr {
+  margin-top: 10px;
+  border: 3px solid azure;
+  box-shadow: 0px 0px 1px #fff;
+}
+
+.parrafo {
+  margin-bottom: 5px;
+}
+
+.parrafos > ul > li {
+  list-style: none;
+}
+
+.texto {
+  padding: 50px;
+  text-align: left;
+}
+
+.contenido > span {
+  border-bottom: 2px solid azure;
+}
+
+div > h2 {
+  font-weight: 300;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.hr {
+  margin: 80px;
+}
+
+.alineador {
+  display: grid;
+  justify-content: left;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.shadow{
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.textop {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.contactoUl {
+  margin: 50px;
+}
+
+.textop {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+
+  .titulo{
+    text-align: center;
+    margin-left: 0px;
+  }
+  .texto{
+    text-align: center;
+  }
+  .parrafo{
+    text-align: center;
+  }
+  .textop{
+    text-align: center;
+  }
+  .card{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .titulo {
+    margin-left: auto;
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .texto {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .parrafo {
+    text-align: left;
+  }
+
+  .contenido {
+    padding: 0;
+  }
+
+  .textop {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+  }
+  .alineador{
+    margin-left: 0;
+    justify-content: center;
+  }
+  .card{
+    font-size: 25px;
+    text-align: center;
+  }
+  .hr{
+    margin: 20px;
+  }
+}

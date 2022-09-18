@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 90vh;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.container a {
+  text-decoration: none;
+  color: azure;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  margin: 9px;
+  line-height: 0%;
+  box-shadow: 0 2px 10px 5px rgba(34, 34, 34, 0.356);
+  border-radius: 16px;
+  transition: all 500ms;
+  flex-wrap: wrap;
+  border: solid rgba(104, 104, 104, 0.171) 1px;
+  z-index: 5;
+}
+
+.box img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: all 500ms;
+  z-index: 10;
+}
+
+.box span {
+  font-size: 1.5rem;
+  display: block;
+  height: 10vh;
+  text-align: center;
+}
+
+.box:hover {
+  flex: 50%;
+}
+
+.box:hover img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    justify-content: center;
+
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .box {
+    height: 500px;
+  }
+
+ 
+  .box img {
+    width: 200%;
+    transform: translateX(-25%);
+    transition: none;
+  }
+
+  .box:hover {
+    flex: 0%;
+  }
+
+  .box:hover img {
+    height: calc(100% - 10vh);
+    width: 200%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+    
+    .container{
+        grid-template-columns: repeat(1, 330px);
+    }
+
+    .box{
+        height: 350px;
+        
+    }
+    .span{
+        padding: 35px;
+    }
+}
